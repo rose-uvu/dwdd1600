@@ -1,0 +1,119 @@
+/* wedding.css */
+
+/* General page setup */
+body {
+    font-family: 'Oxygen', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffaf7;
+    color: #333;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #f9e3e3;
+    padding: 2.5em 0;
+    font-size: 3em; /* larger font for header */
+    font-family: 'Playfair Display', serif; /* elegant serif font */
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #3b2c2c;
+    text-transform: capitalize;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    border-bottom: 2px solid #f1d1d1;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav .active a {
+    color: #b25a5a;
+}
+
+/* Main content */
+main {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 0 1em;
+}
+
+/* Headings */
+h1 {
+    font-size: 2em;
+    margin-bottom: 0.3em;
+    font-family: 'Playfair Display', serif;
+}
+
+h2 {
+    margin-top: 1.5em;
+    color: #b25a5a;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Paragraphs and lists */
+p, ol, dl {
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Figure styling */
+figure {
+    margin: 2em auto;
+}
+
+figure img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 0.5em;
+}
+
+/* Float image on index.html */
+figure.wrapped.right {
+    float: right;
+    margin: 0 0 1em 1em; /* space on left and bottom */
+}
+
+/* Flex gallery for wedding-gallery.html */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* center items in row */
+    gap: 1em; /* space between images */
+}
+
+.gallery figure {
+    flex: 1 1 250px; /* flexible, min width 250px */
+    margin: 0; /* remove default margin */
+}
+
+/* Footer */
+footer {
+    background-color: #f9e3e3;
+    padding: 1em 0;
+    margin-top: 3em;
+    font-size: 0.9em;
+    color: #555;
+}
