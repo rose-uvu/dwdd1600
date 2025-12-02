@@ -1,0 +1,186 @@
+/* wedding.css */
+
+/* UNIVERSAL BOX MODEL */
+* {
+    box-sizing: border-box;
+}
+
+/* HERO IMAGE */
+.hero {
+  background-image: url("hero.jpg");  /* change path as needed */
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  width: 100%;
+  position: relative;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  text-shadow: 0px 3px 12px rgba(0,0,0,0.5);
+}
+
+/* BODY */
+body {
+    font-family: 'Oxygen', sans-serif;
+    margin: 0;
+    background-color: #fffaf7;
+    color: #333;
+    text-align: center;
+}
+
+/* HEADER WITH FLEX */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+    background: linear-gradient(90deg, #f9e3e3, #ffe6d5);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.3));
+}
+
+/* NAVIGATION */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0.75em;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    background-color: #fff;
+    border-bottom: 2px solid #f1d1d1;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 700;
+}
+
+nav .active a,
+nav a:hover {
+    color: #b25a5a;
+}
+
+/* MAIN CONTENT */
+main {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    text-align: center;
+}
+
+/* FORMS */
+form {
+    background: #ffffff;
+    padding: 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 18px;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #aa4465;
+}
+
+label {
+    display: block;
+    margin-bottom: 12px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    background-color: #aa4465;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.85;
+}
+
+/* GALLERY */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.gallery img {
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+/* FOOTER */
+footer {
+    background-color: #f9e3e3;
+    padding: 1em 0;
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 3em;
+}
+
+/* —————————————— RESPONSIVE NAV —————————————— */
+
+/* Phone layout */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+    nav a {
+        display: block;
+        padding: .5em;
+    }
+}

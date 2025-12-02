@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Wedding RSVP">
+    <meta name="author" content="McKenna Trujillo">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wedding RSVP</title>
+    <link href="wedding.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h1>Josh & McKenna</h1>
+</header>
+
+
+<nav>
+    <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="wedding-rsvp.html">RSVP</a></li>
+            <li><a href="wedding-faqs.html">FAQs</a></li>
+            <li><a href="wedding-gallery.html">Gallery</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <h2>RSVP</h2>
+
+    <form action="thanks.html" method="get">
+
+        <fieldset>
+            <legend>Your Information</legend>
+
+            <label>
+                First Name:
+                <input type="text" name="fname" required>
+            </label>
+
+            <label>
+                Last Name:
+                <input type="text" name="lname" required>
+            </label>
+
+            <label>
+                Email:
+                <input type="email" name="email" required>
+            </label>
+
+            <label>
+                Phone Number:
+                <input type="tel" name="phone">
+            </label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Attending?</legend>
+
+            <label><input type="radio" name="attend" value="yes" required> Yes, I will attend</label>
+            <label><input type="radio" name="attend" value="no"> Sorry, I can't attend</label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Message</legend>
+
+            <label>
+                Anything you'd like us to know:
+                <textarea name="comments" rows="3"></textarea>
+            </label>
+        </fieldset>
+
+        <input type="submit" value="Submit RSVP">
+
+    </form>
+
+    <address>
+        or text us at <a href="tel:8015550928">801-555-0928</a><br>
+    </address>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Josh &amp; McKenna &bull; All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
